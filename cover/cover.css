@@ -14,12 +14,16 @@
  * Base structure
  */
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-color: #000000; /* fundo mais escuro */
+  text-shadow:none;
+  box-shadow: none;
 }
 
+/* Aumenta o espaço interno do conteúdo geral */
 .cover-container {
   max-width: 42em;
+  padding-top: 3rem;   /* espaço extra no topo */
+  padding-bottom: 3rem; /* espaço extra no final */
 }
 
 /*
@@ -45,4 +49,12 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+/*
+ * Espaçamento entre seções (cabeçalho, main e rodapé)
+ */
+main {
+  margin-top: 2.5rem;  /* adiciona espaço entre o header e o conteúdo */
+  margin-bottom: 2.5rem; /* adiciona espaço entre o conteúdo e o footer */
 }
