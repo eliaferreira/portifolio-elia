@@ -28,7 +28,7 @@ body {
  * Header
  */
 .float-md-start {
-  color: #20c997; /* Cor verde para o título "Portifólio" */
+  color: #20c997; 
 }
 
 .nav-masthead .nav-link {
@@ -55,23 +55,19 @@ body {
   border-bottom-color: #20c997;
 }
 
-/* Título principal "Eliã Barros Ferreira" em verde */
 .main-title {
   color: #20c997;
 }
-
-/* Borda e sombra verde degradê para a foto de perfil */
 .profile-picture {
-  width: 220px; /* AUMENTADO: de 180px para 220px */
-  height: 220px; /* AUMENTADO: de 180px para 220px */
+  width: 220px; 
+  height: 220px; 
   border-radius: 50%;
-  border: 3px solid #20c997; /* Borda verde */
-  object-fit: cover;
-  /* Sombra verde degradê ajustada para o novo tamanho */
-  box-shadow: 0 0 25px 8px rgba(32, 201, 151, 0.5), /* Sombra principal verde */
-              0 0 50px 15px rgba(32, 201, 151, 0.3), /* Segunda sombra mais suave */
-              0 0 75px 20px rgba(32, 201, 151, 0.1); /* Terceira sombra bem suave */
-  transition: box-shadow 0.3s ease-in-out; /* Transição para a sombra */
+  border: 3px solid #20c997;   object-fit: cover;
+
+  box-shadow: 0 0 25px 8px rgba(32, 201, 151, 0.5), 
+              0 0 50px 15px rgba(32, 201, 151, 0.3), 
+              0 0 75px 20px rgba(32, 201, 151, 0.1); 
+  transition: box-shadow 0.3s ease-in-out; 
 }
 
 .profile-picture:hover {
@@ -80,8 +76,6 @@ body {
               0 0 90px 25px rgba(32, 201, 151, 0.2);
 }
 
-
-/* Estilos para os projetos */
 .card {
   transition: transform .2s;
   border: 1px solid #20c997;
@@ -96,8 +90,6 @@ body {
   object-fit: cover;
 }
 
-
-/* Botão "Ver projetos" com borda verde quadrada */
 .btn-lg.border-custom-green {
     border: 2px solid #20c997 !important;
     border-radius: .25rem;
@@ -112,8 +104,6 @@ body {
     border-color: #20c997 !important;
 }
 
-
-/* Formulário de contato */
 .contact-form-container {
   border: 1px solid #20c997;
   padding: 1.5rem;
@@ -136,20 +126,14 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(36, 224, 168, 0.4);
 }
 
-
-/* Ícones sociais */
 .social-icon img {
   width: 32px;
   height: 32px;
   margin: 0 8px;
-  /* Adicionamos 'filter' na transição para a mudança de cor ser suave */
   transition: transform 0.3s, filter 0.3s;
 }
 
-/* --- NOVO: Ícones ficam verdes ao passar o mouse --- */
 .social-icon img:hover {
-  transform: scale(1.2); /* O efeito de zoom continua */
-  
-  /* Este filtro CSS converte a cor branca do ícone para o tom de verde do seu site */
+  transform: scale(1.2);
   filter: invert(67%) sepia(42%) saturate(1500%) hue-rotate(113deg) brightness(90%) contrast(91%);
 }
